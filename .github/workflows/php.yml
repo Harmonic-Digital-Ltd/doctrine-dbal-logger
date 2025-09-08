@@ -47,7 +47,7 @@ jobs:
             ${{ runner.os }}-vendor-
 
       - name: Install dependencies
-        run: composer install --prefer-dist --no-progress --no-suggest --optimize-autoloader
+        run: composer install --prefer-dist --no-progress --optimize-autoloader
 
       - name: Run PHP-CS-Fixer
         run: vendor/bin/php-cs-fixer fix --dry-run --diff --verbose
@@ -98,7 +98,7 @@ jobs:
             ${{ runner.os }}-vendor-
 
       - name: Install dependencies
-        run: composer install --prefer-dist --no-progress --no-suggest --optimize-autoloader
+        run: composer install --prefer-dist --no-progress --optimize-autoloader
 
       - name: Run PHPUnit
         run: vendor/bin/phpunit
