@@ -1,5 +1,5 @@
 
-# Doctrine DBAL Logger Middleware
+# Doctrine DBAL Logger Middleware [![CI](https://github.com/Harmonic-Digital-Ltd/doctrine-dbal-logger/actions/workflows/php.yml/badge.svg)](https://github.com/Harmonic-Digital-Ltd/doctrine-dbal-logger/actions/workflows/php.yml)
 
 A more flexible logging middleware for Doctrine DBAL that provides database operation logging with configurable log levels and messages.
 
