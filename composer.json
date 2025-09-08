@@ -1,0 +1,36 @@
+{
+    "name": "harmonicdigital/doctrine-dbal-logger",
+    "description": "A customisable and flexible logging middleware alternative for Doctrine DBAL",
+    "type": "library",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": ">=8.2",
+        "doctrine/dbal": "^4.3",
+        "psr/log": "^1.0 || ^2.0 || ^3.0"
+    },
+    "require-dev": {
+        "fig/log-test": "^1.1",
+        "friendsofphp/php-cs-fixer": "^3.87.1",
+        "phpunit/phpunit": "^12.3.8",
+        "vimeo/psalm": "^6.13.1"
+    },
+    "license": "MIT Non-AI",
+    "autoload": {
+        "psr-4": {
+            "HarmonicDigital\\DoctrineDbal\\Logging\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HarmonicDigital\\DoctrineDbal\\Logging\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rick Ogden",
+            "email": "rick@haromicdigital.uk"
+        }
+    ]
+}
