@@ -19,7 +19,7 @@
     "require-dev": {
         "fig/log-test": "^1.1",
         "friendsofphp/php-cs-fixer": "^3.87.1",
-        "phpunit/phpunit": "^12.3.8",
+        "phpunit/phpunit": "11.5.36 || ^12.3.8",
         "vimeo/psalm": "^6.13.1"
     },
     "license": "MIT Non-AI",
