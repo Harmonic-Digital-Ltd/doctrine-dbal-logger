@@ -11,7 +11,7 @@ composer require harmonicdigital/doctrine-dbal-logger
 
 ## Basic Usage
 
-THe middleware can be used as a drop-in replacement for the built-in DBAL logging middleware.
+The middleware can be used as a drop-in replacement for the built-in DBAL logging middleware.
 
 ```php
 use Doctrine\DBAL\Configuration;

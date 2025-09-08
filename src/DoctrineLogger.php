@@ -41,21 +41,11 @@ final readonly class DoctrineLogger implements DoctrineLoggerInterface
         private array $logMessages = [],
     ) {}
 
-    /**
-     * @param self::LOG_* $message
-     *
-     * @return LogLevel::*
-     */
-    public function getLevel(string $message): string
-    {
-        return $this->logLevels[$message] ?? self::DEFAULT_LEVELS[$message];
-    }
-
     #[\Override]
     public function log(string $log, array $context = []): void
     {
         $this->logger->log(
-            $this->getLevel($log),
+            $this->logLevels[$log] ?? self::DEFAULT_LEVELS[$log],
             $this->logMessages[$log] ?? self::DEFAULT_MESSAGES[$log],
             $context,
         );
